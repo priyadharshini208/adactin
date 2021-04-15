@@ -1,0 +1,414 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-15T07:05:59.134Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2688500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeSanity()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "to validate booking functionality",
+        "description": "",
+        "id": "to-enter-values-for-booking;to-validate-booking-functionality;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 109000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterSanity()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15312745100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is in adactin home page",
+            "match": {
+              "location": "StepDeff.user_is_in_adactin_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 618223400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters valid \"\u003cusername\u003e\" and valid \"\u003cpassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cusername\u003e\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDeff.user_enters_valid_and_valid(String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "dharshu208",
+                  "88G43T"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1169985700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks login button",
+            "match": {
+              "location": "StepDeff.user_clicks_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1697189300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user selects\"\",\"Hotel Creek\",\"Double\",\"2\",\"3\",\"\u003cChildrenCount\u003e\" and click search button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Hotel Creek\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"Double\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"2\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"3\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"\u003cChildrenCount\u003e\"",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDeff.user_selects_and_click_search_button(String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#radiobutton_0\"}\n  (Session info: chrome\u003d89.0.4389.128)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-MBQRG31\u0027, ip: \u0027192.168.43.60\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.128, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\\Users\\King\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:33371}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: bb0837a34225a4169b8b7ab188961ded\n*** Element info: {Using\u003did, value\u003dradiobutton_0}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\r\n\tat org.files.StepDeff.user_selects_the_hotel_and_clicks_continue(StepDeff.java:79)\r\n\tat ✽.user selects the hotel and clicks continue(file:src/test/resources/feature/booking.feature:9)\r\n",
+              "duration": 274967400,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "user selects the hotel and clicks continue",
+            "match": {
+              "location": "StepDeff.user_selects_the_hotel_and_clicks_continue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51300,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user enters \"priya\",\"dharsha\",\"chennai\",\"1234432156788765\",\"VISA\",\"December\",\"2022\",\"345\" and click booknow",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"priya\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"dharsha\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"chennai\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"1234432156788765\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"VISA\"",
+                  "offset": 59
+                },
+                {
+                  "val": "\"December\"",
+                  "offset": 66
+                },
+                {
+                  "val": "\"2022\"",
+                  "offset": 77
+                },
+                {
+                  "val": "\"345\"",
+                  "offset": 84
+                }
+              ],
+              "location": "StepDeff.user_enters_and_click_booknow(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29800,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user in confirmation page",
+            "match": {
+              "location": "StepDeff.user_in_confirmation_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-15T07:06:18.557Z",
+        "before": [
+          {
+            "result": {
+              "duration": 182500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeSanity()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "to validate booking functionality",
+        "description": "",
+        "id": "to-enter-values-for-booking;to-validate-booking-functionality;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 103200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterSanity()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9175275400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is in adactin home page",
+            "match": {
+              "location": "StepDeff.user_is_in_adactin_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1118310500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters valid \"\u003cusername\u003e\" and valid \"\u003cpassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cusername\u003e\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDeff.user_enters_valid_and_valid(String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "dharshu208",
+                  "88G43T"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1814081000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks login button",
+            "match": {
+              "location": "StepDeff.user_clicks_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3032171900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user selects\"Paris\",\"Hotel Sunshine\",\"Deluxe\",\"1\",\"2\",\"\u003cChildrenCount\u003e\" and click search button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Paris\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Hotel Sunshine\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"Deluxe\"",
+                  "offset": 37
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 46
+                },
+                {
+                  "val": "\"2\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"\u003cChildrenCount\u003e\"",
+                  "offset": 54
+                }
+              ],
+              "location": "StepDeff.user_selects_and_click_search_button(String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1224002100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user selects the hotel and clicks continue",
+            "match": {
+              "location": "StepDeff.user_selects_the_hotel_and_clicks_continue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6600566600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enters \"devi\",\"priya\",\"madurai\",\"5432234598766789\",\"mastercard\",\"August\",\"2022\",\"433\" and click booknow",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"devi\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"priya\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"madurai\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"5432234598766789\"",
+                  "offset": 37
+                },
+                {
+                  "val": "\"mastercard\"",
+                  "offset": 56
+                },
+                {
+                  "val": "\"August\"",
+                  "offset": 69
+                },
+                {
+                  "val": "\"2022\"",
+                  "offset": 78
+                },
+                {
+                  "val": "\"433\"",
+                  "offset": 85
+                }
+              ],
+              "location": "StepDeff.user_enters_and_click_booknow(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7266881900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user in confirmation page",
+            "match": {
+              "location": "StepDeff.user_in_confirmation_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "to enter values for booking",
+    "description": "",
+    "id": "to-enter-values-for-booking",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/booking.feature",
+    "tags": []
+  }
+]
